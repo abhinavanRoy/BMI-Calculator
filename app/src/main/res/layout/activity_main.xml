@@ -8,8 +8,6 @@
     tools:context=".MainActivity">
 
 
-
-
     <EditText
         android:id="@+id/weight"
         android:layout_width="wrap_content"
@@ -48,56 +46,56 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="161dp"
-        android:layout_marginEnd="162dp"
+        android:layout_marginEnd="150dp"
         android:background="#E185D7"
-        android:text="Calculate"
-
         android:elevation="5dp"
+
+        android:text="Calculate"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.622"
+        app:layout_constraintVertical_bias="0.617"
 
         />
-
 
     <TextView
         android:id="@+id/result"
         android:layout_width="118dp"
         android:layout_height="24dp"
-        android:textSize="20sp"
         android:layout_marginBottom="1dp"
+
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.796" />
+        app:layout_constraintVertical_bias="0.798" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="167dp"
-        android:layout_marginEnd="168dp"
+        android:layout_marginStart="174dp"
+        android:layout_marginEnd="156dp"
         android:layout_marginBottom="7dp"
         android:text="Remarks"
-        android:textStyle="bold"
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.647"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.738" />
+        app:layout_constraintVertical_bias="0.735" />
 
     <TextView
         android:id="@+id/remarks"
         android:layout_width="307dp"
         android:layout_height="62dp"
-        android:layout_marginLeft="49dp"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="20dp"
         android:padding="6dp"
         android:text="Calculate To see your remarks"
@@ -105,9 +103,10 @@
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.534"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.879" />
+        app:layout_constraintVertical_bias="0.884" />
 
     <TextView
         android:id="@+id/textView5"
