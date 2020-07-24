@@ -3,9 +3,11 @@ package com.example.bmicalculator;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -35,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
          btnCalc.setOnClickListener(new View.OnClickListener() {
              @Override
              public void onClick(View view) {
+                 closeKeyboard();
                  calculate();
              }
          });
@@ -45,7 +48,21 @@ public class MainActivity extends AppCompatActivity {
                  chart_view();
              }
          });
+
+
     }
+
+    public void closeKeyboard(){
+
+        View view = this.getCurrentFocus();
+        if (view != null){
+            InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+            imm.hideSoftInputFromWindow(view.getWindowToken(),0);
+        }
+
+
+
+    }  //Collapse Keyboard
 
     public void calculate(){
             String weight = etWeight.getText().toString();
@@ -84,10 +101,10 @@ public class MainActivity extends AppCompatActivity {
             }
 
 
-    }
+    }      // Calculate BMI
 
 
-    public void chart_view()
+    public void chart_view()   // Open BMI Chart
     {
         Intent charViewIntent = new Intent(getApplicationContext(),bmi_chart.class);
         startActivity(charViewIntent);
