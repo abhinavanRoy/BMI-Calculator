@@ -10,6 +10,11 @@ An Android Application that calculates your Body Mass Index(BMI). In this Applic
 
 * **Abhinavan Roy** - *Initial work* - [abhinavanRoy](https://github.com/abhinavanRoy)
 
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+
 
 
 
