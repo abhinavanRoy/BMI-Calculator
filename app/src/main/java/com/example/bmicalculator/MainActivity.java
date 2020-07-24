@@ -13,7 +13,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
    EditText etHeight, etWeight;
-   Button btnCalc;
+   Button btnCalc,btnChart;
    TextView tvResult,tvRemarks;
    final String normal = "Normal";
    final String obese = "Obese";
@@ -29,11 +29,20 @@ public class MainActivity extends AppCompatActivity {
          btnCalc = findViewById(R.id.calc_btn);
          tvResult = findViewById(R.id.result);
          tvRemarks = findViewById(R.id.remarks);
+         btnChart = findViewById(R.id.chart);
+
 
          btnCalc.setOnClickListener(new View.OnClickListener() {
              @Override
              public void onClick(View view) {
                  calculate();
+             }
+         });
+
+         btnChart.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View view) {
+                 chart_view();
              }
          });
     }
@@ -75,5 +84,12 @@ public class MainActivity extends AppCompatActivity {
             }
 
 
+    }
+
+
+    public void chart_view()
+    {
+        Intent charViewIntent = new Intent(getApplicationContext(),bmi_chart.class);
+        startActivity(charViewIntent);
     }
 }
