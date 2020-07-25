@@ -9,6 +9,7 @@ An Android Application that calculates your Body Mass Index(BMI). In this Applic
 
 ## App Preview
 ![Capture 1](https://user-images.githubusercontent.com/42739897/88464305-39215e00-ced7-11ea-9c95-87ac9304a4bc.PNG) 
+![Capture 4](https://user-images.githubusercontent.com/42739897/88464514-27d95100-ced9-11ea-9ba9-1c48b2b73d68.PNG)
 
 
 
