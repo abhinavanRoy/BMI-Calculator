@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
    EditText etHeight, etWeight;
    Button btnCalc;
    TextView tvResult,tvRemarks;
+
    final String normal = "Normal";
    final String obese = "Obese";
    final String ovrWeight = "Over Weight";
@@ -35,17 +36,20 @@ public class MainActivity extends AppCompatActivity {
          tvResult = findViewById(R.id.result);
          tvRemarks = findViewById(R.id.remarks);
 
+        etWeight.setHint("Weight in Kgs");
+
+
+
 
 
          btnCalc.setOnClickListener(new View.OnClickListener() {
              @Override
              public void onClick(View view) {
+
                  closeKeyboard();
                  calculate();
              }
          });
-
-
 
 
     }
@@ -76,7 +80,10 @@ public class MainActivity extends AppCompatActivity {
                 float h = Float.parseFloat(height);
                 float w = Float.parseFloat(weight);
                 double a = (h * h * 0.01 * 0.01 );
+
                 double bmi = w /a;
+
+
 
 
                 if(bmi >= 18.5 && bmi <= 25.0)

@@ -16,7 +16,7 @@
         android:layout_marginStart="110dp"
         android:layout_marginEnd="91dp"
         android:ems="10"
-        android:hint="Weight in kg"
+
         android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

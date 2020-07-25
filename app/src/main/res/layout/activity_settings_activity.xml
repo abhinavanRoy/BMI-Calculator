@@ -8,5 +8,43 @@
     android:background="@drawable/background_without_card">
 
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+<TextView
+    android:id="@+id/weight_pounds"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp"
+    android:layout_marginStart="18dp"
+    android:text="Weight (Pounds)"
+    android:textSize="20sp"
+
+
+    >
+
+</TextView>
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switch_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="160dp"
+            android:layout_marginTop="30dp"
+
+
+            >
+        </androidx.appcompat.widget.SwitchCompat>
+
+
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
