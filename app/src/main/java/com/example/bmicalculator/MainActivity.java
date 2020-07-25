@@ -1,11 +1,14 @@
 package com.example.bmicalculator;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
@@ -15,7 +18,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
    EditText etHeight, etWeight;
-   Button btnCalc,btnChart;
+   Button btnCalc;
    TextView tvResult,tvRemarks;
    final String normal = "Normal";
    final String obese = "Obese";
@@ -31,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
          btnCalc = findViewById(R.id.calc_btn);
          tvResult = findViewById(R.id.result);
          tvRemarks = findViewById(R.id.remarks);
-         btnChart = findViewById(R.id.chart);
+
 
 
          btnCalc.setOnClickListener(new View.OnClickListener() {
@@ -42,12 +45,7 @@ public class MainActivity extends AppCompatActivity {
              }
          });
 
-         btnChart.setOnClickListener(new View.OnClickListener() {
-             @Override
-             public void onClick(View view) {
-                 chart_view();
-             }
-         });
+
 
 
     }
@@ -101,12 +99,33 @@ public class MainActivity extends AppCompatActivity {
             }
 
 
-    }      // Calculate BMI
-
-
-    public void chart_view()   // Open BMI Chart
-    {
-        Intent charViewIntent = new Intent(getApplicationContext(),bmi_chart.class);
-        startActivity(charViewIntent);
     }
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main_tab,menu);
+        return super.onCreateOptionsMenu(menu);
+
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+   switch (item.getItemId()){
+       case R.id.ic_settings:
+           Intent settings_intent = new Intent(getApplicationContext(),settings_activity.class);
+           startActivity(settings_intent);
+           break;
+
+       case R.id.ic_info_chart:
+           Intent charViewIntent = new Intent(getApplicationContext(),bmi_chart.class);
+           startActivity(charViewIntent);
+           break;
+
+   }
+
+        return super.onOptionsItemSelected(item);
+    }
+
+
 }

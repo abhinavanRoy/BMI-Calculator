@@ -8,37 +8,6 @@
     tools:context=".MainActivity">
 
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="1dp"
-        android:layout_marginEnd="1dp"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.199">
-
-        <Button
-
-            android:id="@+id/chart"
-            android:layout_width="58dp"
-            android:layout_height="58dp"
-            android:background="@drawable/ic_baseline_info_24"
-            android:elevation="50dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.186"
-
-            />
-
-    </LinearLayout>
 
 
     <EditText
@@ -83,6 +52,7 @@
         android:background="#E185D7"
         android:elevation="5dp"
 
+
         android:text="Calculate"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -116,6 +86,7 @@
         android:layout_marginEnd="156dp"
         android:layout_marginBottom="7dp"
         android:text="Remarks"
+        android:gravity="center_horizontal"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -129,7 +100,7 @@
         android:id="@+id/remarks"
         android:layout_width="307dp"
         android:layout_height="62dp"
-        android:layout_marginStart="45dp"
+        android:layout_marginStart="33dp"
         android:layout_marginTop="20dp"
         android:padding="6dp"
         android:text="Calculate To see your remarks"
