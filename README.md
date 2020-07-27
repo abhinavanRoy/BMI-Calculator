@@ -3,7 +3,7 @@ An Android Application that calculates your Body Mass Index(BMI). In this Applic
 
 ## Build With
 
-* Android Studio(version: 4.1) - The IDE used.
+* Android Studio(version: 4.0) - The IDE used.
 * Java/XML - The Programming Language used.
 
 
