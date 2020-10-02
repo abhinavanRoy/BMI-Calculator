@@ -21,10 +21,10 @@ public class MainActivity extends AppCompatActivity {
    Button btnCalc;
    TextView tvResult,tvRemarks;
 
-   final String normal = "Normal";
-   final String obese = "Obese";
-   final String ovrWeight = "Over Weight";
-   final String UnderWeight = "Under Weight";
+   final String normal = "Normal:no need to worry";
+   final String obese = "Obese:can do better";
+   final String ovrWeight = "Over Weight:urgent need to improve";
+   final String UnderWeight = "Under Weight:do better";
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
 
                 if(bmi >= 18.5 && bmi <= 25.0)
                 {
-                    tvRemarks.setText("Normal");
+                    tvRemarks.setText(Normal);
                 }
                 else if( bmi <=18.5){
                     tvRemarks.setText(UnderWeight);
