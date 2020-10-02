@@ -1,5 +1,5 @@
 # BMI-Calculator
-An Android Application that calculates your Body Mass Index(BMI). In this Application you can also check the BMI Chart.
+An Android Application that calculates your Body Mass Index(BMI). By the help of this application, you can also check the BMI Chart.
 
 ## Build With
 
@@ -14,7 +14,7 @@ An Android Application that calculates your Body Mass Index(BMI). In this Applic
 
 
 
-## Authors 
+## Authors:
 
 * **Abhinavan Roy** - *Initial work* - [abhinavanRoy](https://github.com/abhinavanRoy)
 
