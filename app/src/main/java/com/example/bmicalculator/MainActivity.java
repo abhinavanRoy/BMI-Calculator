@@ -70,10 +70,10 @@ public class MainActivity extends AppCompatActivity {
             String weight = etWeight.getText().toString();
             String height = etHeight.getText().toString();
             if(weight.isEmpty()){
-                etWeight.setError("Enter Weight");
+                etWeight.setError("Kindly enter your Weight");
             }
             else if(height.isEmpty()){
-                etHeight.setError("Enter Height");
+                etHeight.setError("Kindly enter your Height");
             }
 
             else {
@@ -88,19 +88,19 @@ public class MainActivity extends AppCompatActivity {
 
                 if(bmi >= 18.5 && bmi <= 25.0)
                 {
-                    tvRemarks.setText(Normal);
+                    tvRemarks.setText("Normal");
                 }
                 else if( bmi <=18.5){
-                    tvRemarks.setText(UnderWeight);
+                    tvRemarks.setText("UnderWeight");
                 }
                 else if( bmi >= 25.0 && bmi <= 30.0){
-                    tvRemarks.setText(ovrWeight);
+                    tvRemarks.setText("ovrWeight");
                 }
                 else if( bmi >30.0){
-                    tvRemarks.setText(obese);
+                    tvRemarks.setText("obese");
                 }
                  int res = (int) bmi;
-                tvResult.setText(String.valueOf(res));
+                tvResult.setText(String.valueOf("res"));
 
 
             }
