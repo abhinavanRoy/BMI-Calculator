@@ -6,6 +6,8 @@ import android.annotation.SuppressLint;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 
+import java.util.Objects;
+
 public class bmi_chart extends AppCompatActivity {
 
     @SuppressLint("RestrictedApi")
@@ -13,7 +15,7 @@ public class bmi_chart extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bmi_chart);
-        getSupportActionBar().setDefaultDisplayHomeAsUpEnabled(true);
+        Objects.requireNonNull(getSupportActionBar()).setDefaultDisplayHomeAsUpEnabled(true);
 
 
 

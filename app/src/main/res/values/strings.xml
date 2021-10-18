@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">BMI Calculator</string>
+    <string name="remark_normal">Normal:no need to worry</string>
+    <string name="remark_obese">Obese:can do better</string>
+    <string name="remark_overweight">Over Weight:urgent need to improve</string>
+    <string name="remark_underweight">Under Weight:do better</string>
+    <string name="weight_pounds">Weight (Pounds)</string>
+    <string name="remarks">Remarks</string>
+    <string name="calculate_to_see_your_remarks">Calculate To see your remarks</string>
+    <string name="score">Score:</string>
+    <string name="height_in_cm">Height in cm</string>
+    <string name="calculate">Calculate</string>
+    <string name="bmi_range_chart">BMI RANGE CHART</string>
+    <string name="settings">Settings</string>
+    <string name="save">save</string>
+    <string name="value">value</string>
+    <string name="weight_changed_to_pounds">Weight Changed to Pounds</string>
+    <string name="weight_changed_to_kilo">Weight Changed to Kilograms</string>
 </resources>
