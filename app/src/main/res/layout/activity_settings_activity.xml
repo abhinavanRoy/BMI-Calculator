@@ -25,7 +25,7 @@
     android:layout_height="wrap_content"
     android:layout_marginTop="30dp"
     android:layout_marginStart="18dp"
-    android:text="Weight (Pounds)"
+    android:text="@string/weight_pounds"
     android:textSize="20sp"
 
 

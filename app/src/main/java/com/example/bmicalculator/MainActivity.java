@@ -16,15 +16,17 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+
+
 public class MainActivity extends AppCompatActivity {
    EditText etHeight, etWeight;
    Button btnCalc;
    TextView tvResult,tvRemarks;
 
-   final String normal = "Normal:no need to worry";
-   final String obese = "Obese:can do better";
-   final String ovrWeight = "Over Weight:urgent need to improve";
-   final String UnderWeight = "Under Weight:do better";
+   final String normal = getString(R.string.remark_normal);
+   final String obese = getString(R.string.remark_obese);
+   final String ovrWeight = getString(R.string.remark_overweight);
+   final String UnderWeight = getString(R.string.remark_underweight);
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,10 +39,6 @@ public class MainActivity extends AppCompatActivity {
          tvRemarks = findViewById(R.id.remarks);
 
         etWeight.setHint("Weight in Kgs");
-
-
-
-
 
          btnCalc.setOnClickListener(new View.OnClickListener() {
              @Override
@@ -88,16 +86,16 @@ public class MainActivity extends AppCompatActivity {
 
                 if(bmi >= 18.5 && bmi <= 25.0)
                 {
-                    tvRemarks.setText("Normal");
+                    tvRemarks.setText(normal);
                 }
                 else if( bmi <=18.5){
-                    tvRemarks.setText("UnderWeight");
+                    tvRemarks.setText(UnderWeight);
                 }
                 else if( bmi >= 25.0 && bmi <= 30.0){
-                    tvRemarks.setText("ovrWeight");
+                    tvRemarks.setText(ovrWeight);
                 }
                 else if( bmi >30.0){
-                    tvRemarks.setText("obese");
+                    tvRemarks.setText(obese);
                 }
                  int res = (int) bmi;
                 tvResult.setText(String.valueOf("res"));
